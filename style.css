@@ -11,14 +11,20 @@ body{
   align-items: center;
   justify-content: center;
   font-family: Work Sans;
+  color: hsl(292, 42%, 14%);
 }
 main{
   margin: 0;
-  padding: 20px;
+  padding: 10px 30px 20px 30px;
   background-color: #ffffff;
   width: 80%;
   border-radius: 10px;
 }
-h1{
-  margin: 0;
+p{
+  font-weight: 700;
+  font-size: 16;
+  margin-bottom: 20px;
+}
+span{
+  color: hsl(292, 16%, 49%);
 }
