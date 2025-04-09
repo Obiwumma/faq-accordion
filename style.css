@@ -36,3 +36,9 @@ h1{
   color: hsl(292, 16%, 49%);
   /* display: none; */
 }
+.question{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
