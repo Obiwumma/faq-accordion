@@ -48,3 +48,9 @@ h1{
   align-items: center;
   justify-content: space-between;
 }
+
+@media (min-width:768px) {
+  body{
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+  }
+}

@@ -11,9 +11,38 @@ const ans2 = document.getElementsByClassName("answer2");
 const ans3 = document.getElementsByClassName("answer3");
 const ans4 = document.getElementsByClassName("answer4");
 
+
+const buttons = [btn1, btn2, btn3, btn4];
+const answers = [ans1[0], ans2[0], ans3[0], ans4[0]];
+
 // console.log(ans1[0].innerText)
 // ans1[0].style.display = "none"
 
+
+function toggleAnswer(index, answers, plusIcons, minusIcons) {
+  const isCollapsed = minusIcons[index].style.display === "none";
+
+  if (isCollapsed) {
+    answers[index].style.display = "none";
+    plusIcons[index].style.display = "none";
+    minusIcons[index].style.display = "block";
+  } else {
+    answers[index].style.display = "block";
+    plusIcons[index].style.display = "block";
+    minusIcons[index].style.display = "none";
+  }
+}
+
+buttons.forEach((btn, i) => {
+  btn.addEventListener("click", () => toggleAnswer(i, answers, plus, minus));
+});
+
+
+
+
+// The code I wrote here was too redundant so I improved it above
+
+/*
 btn1.addEventListener("click", () => {
   if ( minus[0].style.display === "none" ) {
     ans1[0].style.display = "none"
@@ -61,4 +90,6 @@ btn4.addEventListener("click", () => {
     minus[3].style.display = "none"
   }
 
-})
+}
+
+*/
