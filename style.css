@@ -38,11 +38,9 @@ h1{
 .minus{
   display: none;
 }
-.answer{
-  color: hsl(292, 16%, 49%);
-}
 .answer1, .answer2, .answer3, .answer4{
   display: none;
+  color: hsl(292, 16%, 49%);
 }
 .question{
   display: flex;
