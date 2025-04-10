@@ -3,8 +3,8 @@ const btn2 = document.getElementById("button2");
 const btn3 = document.getElementById("button3");
 const btn4 = document.getElementById("button4");
 
-const plus = document.querySelectorAll("#plus");
-const minus = document.querySelectorAll("#minus");
+const plus = document.getElementsByClassName("plus");
+const minus = document.getElementsByClassName("minus");
 
 const ans1 = document.getElementsByClassName("answer1");
 const ans2 = document.getElementsByClassName("answer2");
@@ -14,7 +14,6 @@ const ans4 = document.getElementsByClassName("answer4");
 
 const buttons = [btn1, btn2, btn3, btn4];
 const answers = [ans1[0], ans2[0], ans3[0], ans4[0]];
-
 
 
 function toggleAnswer(index, answers, plusIcons, minusIcons) {
