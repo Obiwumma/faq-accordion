@@ -42,6 +42,9 @@ h1{
   color: hsl(292, 16%, 49%);
   /* display: none; */
 }
+.answer1, .answer2, .answer3, .answer4{
+  display: none;
+}
 .question{
   display: flex;
   flex-direction: row;
