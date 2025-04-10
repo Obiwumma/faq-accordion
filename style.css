@@ -32,6 +32,12 @@ h1{
   height: 20px;
   margin-right: 20px;
 }
+#plus{
+  display: block;
+}
+#minus{
+  display: none;
+}
 .answer{
   color: hsl(292, 16%, 49%);
   /* display: none; */
